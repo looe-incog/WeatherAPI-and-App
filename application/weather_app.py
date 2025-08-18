@@ -125,7 +125,7 @@ class Weather(QMainWindow):
                 label.setText("{:<26}: {:>25}".format(data_name, str(hourly_data[1][data_key])))
 
 app = QApplication(sys.argv)
-app.setFont(QFont("Courier New", 10))
+app.setFont(QFont("Courier New", 16))
 window = Weather()
 window.show()
 app.exec()
