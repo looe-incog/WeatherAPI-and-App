@@ -38,7 +38,7 @@ def get_hourly_update():
         return False, str(hourly_data.status_code) #if request fails return false with the error code
 
 def get_daily_update():
-    url = "http://127.0.0.1:5000/daily_update".format(get_ip())
+    url = "http://127.0.0.1:5000/daily_update"
     daily_data = requests.get(url) #request the daily data exposed by api.py
 
     if daily_data.status_code == 200:
