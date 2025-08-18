@@ -7,21 +7,20 @@ This is a project that I chose to follow in order to apply the basics of python 
 
 # Steps to run the project
 
-1. Clone the repository
+1. Install Redis
+   - Go [**Redis Installation Guide**](https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/) and follow which is applicable on your operating system.
+   - Don't forget to start redis and close it after you run this project. (Instructions are also included in the link above)
+
+2. Clone the repository
    ```sh
    git clone https://github.com/looe-incog/WeatherAPI-and-App.git
    cd WeatherAPI-and-App
-   ```
-
-2. Install redis
-   - Go [**Redis Installation Guide**](https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/) and follow which is applicable on your operating system.
-   - Don't forget to start redis and close it after you run this project. (Instructions are also included in the link above)
-   
+   ```  
 3. Install dependencies(one-time-setup)
    - Inside the project folder, run the script:
-   ```sh
-   ./install_dependencies
-   ```
+      ```sh
+      ./install_dependencies
+      ```
    - This will:
       - Create a virtual environment (`.dev\`) so that the dependecies are only installed inside the project.
       - Install all required dependencies.
@@ -30,9 +29,9 @@ This is a project that I chose to follow in order to apply the basics of python 
 4. Configure the API key
    - Go to the `api/` folder and open `weather.py` using any text editor.
    - Find this line:
-     ```python
-     url = "" #Enter your API link here from visual crossing
-     ```
+      ```python
+      url = "" #Enter your API link here from visual crossing
+      ```
    - To get the API link:
       - Create an account at [Visual Crossing](https://www.visualcrossing.com/)
       - Go to **Weather API** section
