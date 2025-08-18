@@ -8,23 +8,48 @@ This is a project that I chose to follow in order to apply the basics of python 
 # Steps to run the project
 
 1. Clone the repository
-2. In the folder click, install dependencies. This should be only done one time. It set ups a virtual environement so that the dependencies used in this project is isolated. After that, it installs the necessary dependencies which you can view in the depencies.txt generated after its execution.
-3. Go to api folder
-   - Open weather.py and find the following line:
-      ```python
-      url = "" #enter your API link here from visual crossing
-      ```
-      To get the API link, create an account in [Visual Crossing](https://www.visualcrossing.com/), then do the following:
-      - Go to Weather API section
-      - Enter your location (Example: Philippines)
-      - Click "Build your first API query"
-      - Under Data and API design, click API.
-      - Copy the link in the textbox.
-      - Enter the link in the line mentioned above then save.
+   ```sh
+   git clone https://github.com/looe-incog/WeatherAPI-and-App.git
+   cd WeatherAPI-and-App
+   ```
 
-4. Go back to the WeatherAPI-and-App folder and run the following:
-   - run_api
-   - run_app
+2. Install redis
+   - Go [**Redis Installation Guide**](https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/) and follow which is applicable on your operating system.
+   - Don't forget to start redis and close it after you run this project. (Instructions are also included in the link above)
+   
+3. Install dependencies(one-time-setup)
+   - Inside the project folder, run the script:
+   ```sh
+   ./install_dependencies
+   ```
+   - This will:
+      - Create a virtual environment (`.dev\`) so that the dependecies are only installed inside the project.
+      - Install all required dependencies.
+      - Generate a `dependencies.txt` that lists dependencies installed
+
+4. Configure the API key
+   - Go to the `api/` folder and open `weather.py` using any text editor.
+   - Find this line:
+     ```python
+     url = "" #Enter your API link here from visual crossing
+     ```
+   - To get the API link:
+      - Create an account at [Visual Crossing](https://www.visualcrossing.com/)
+      - Go to **Weather API** section
+      - Enter your location (Example: Philippines)
+      - Click **Build your first API Query**
+      - Under **Data and API design**, click **API**
+      - Copy the link shown in that textbox
+   - Enter that link between the **url** line above and save the file.
+
+5. Run the project
+   From the root folder (`WeatherAPI-and-APP/`), run both scripts in separate terminals
+   ```sh
+   ./run_api
+   ./run_app
+   ```
+   - `run_api` starts the Weaather API (backend)
+   - `run_app` starts the Weather App (frontend)
 
 # References
 
