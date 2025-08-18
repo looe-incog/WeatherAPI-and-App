@@ -8,7 +8,7 @@ This is a project that I chose to follow in order to apply the basics of python 
 # Steps to run the project
 
 1. Install Redis
-   - Go [**Redis Installation Guide**](https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/) and follow which is applicable on your operating system.
+   - Go to [**Redis Installation Guide**](https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/) and follow which is applicable on your operating system.
    - Don't forget to start redis and close it after you run this project. (Instructions are also included in the link above)
 
 2. Clone the repository
