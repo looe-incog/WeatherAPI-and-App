@@ -1,22 +1,8 @@
 #This is a module that contains functions to be used in my
 #Weather app UI
 
-import socket
 import requests
 from datetime import datetime
-
-def get_ip():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.settimeout(0)
-    try:
-        # doesn't even have to be reachable
-        s.connect(('10.254.254.254', 1))
-        IP = s.getsockname()[0]
-    except Exception:
-        IP = '127.0.0.1'
-    finally:
-        s.close()
-    return IP
 
 def hourly_data_list():
     return [ ("Time", "datetime"), ("Temperature", "temp"), ("Heat Index", "feelslike"),
@@ -43,7 +29,7 @@ def daily_data_list():
 
 def get_hourly_update():
     id = str(datetime.now().time())
-    url = "http://{}:5000/daily_update/{}".format(get_ip(), id[:2]) #request the hourly data exposed by api.py
+    url = "http://127.0.0.1:5000/daily_update/{}".format(id[:2]) #request the hourly data exposed by api.py
     hourly_data = requests.get(url)
 
     if hourly_data.status_code == 200:
@@ -52,7 +38,7 @@ def get_hourly_update():
         return False, str(hourly_data.status_code) #if request fails return false with the error code
 
 def get_daily_update():
-    url = "http://{}:5000/daily_update".format(get_ip())
+    url = "http://127.0.0.1:5000/daily_update".format(get_ip())
     daily_data = requests.get(url) #request the daily data exposed by api.py
 
     if daily_data.status_code == 200:
