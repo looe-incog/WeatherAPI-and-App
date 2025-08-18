@@ -42,8 +42,7 @@ This is a project that I chose to follow in order to apply the basics of python 
     ./flask
     ```
    Note: You only have to do chmod +x ./flask once. Otherwise if you want to test your app just run the flask as a first step.
-4. Go application folder and run weather_app.py
-
+4. Open another terminal window, go to WeatherAPI-and-App folder then activate virtual environment again if not activated yet. Go to application folder then run:
     ```sh
     python3 weather_app.py
     ```
