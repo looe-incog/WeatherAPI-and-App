@@ -1,0 +1,5 @@
+#!/bin/bash
+source .dev/bin/activate
+
+cd application
+python3 weather_app.py
