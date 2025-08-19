@@ -30,7 +30,7 @@ This project consists of two components:
       ./install_dependencies
       ```
    - This will:
-      - Create a virtual environment (`.dev\`) so that the dependecies are only installed inside the project.
+      - Create a virtual environment (`.dev`) so that the dependecies are only installed inside the project.
       - Install all required dependencies.
       - Generate a `dependencies.txt` that lists dependencies installed
 
