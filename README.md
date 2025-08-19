@@ -1,7 +1,7 @@
 # WeatherAPI
 (Roadmap.sh based project)
 
-This is a project that I chose to follow in order to apply the basics of python I learned from [Crash Course to Python](https://www.coursera.org/learn/python-crash-course/) by Google. It has extensive use of dictionary data type which I had trouble understanding at first. It is an idea from the  Weather API project by [Roadmap.sh](https://roadmap.sh/projects) wherein we create our own API that fetches from a third-party API, [Visual Crossing](https://www.visualcrossing.com/) in this case, and apply caching using [Redis](https://redis.io/).
+This project inspired from the [Weather API Project](https://roadmap.sh/projects/weather-api-wrapper-service) by [Roadmap.sh](https://roadmap.sh/) created to help me understand the basics of REST API development. Using flask, I developed a local weather API that fetches data from a third-party API and used Redis for caching to avoid reduntant requests and enhance response time. The API and frontend communicate locally or through the machine's loopback addres. It is not a production-ready service and built for me to learn how APIs are structured, how caching improves performance, and how applications can get data from API endpoints. It served as my first step in getting familiar with REST API design and allowing me to practice JSON handling and Python programming. 
 
 This project consists of two components:
 1. A Flask API which receives and caches data locally (using Redis) and exposes endpoints.
