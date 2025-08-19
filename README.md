@@ -1,4 +1,4 @@
-# WeatherAPI
+# Weather API and App
 (Roadmap.sh based project)
 
 This project was inspired by the [Weather API Project](https://roadmap.sh/projects/weather-api-wrapper-service) from [Roadmap.sh](https://roadmap.sh/). I worked on it to help me understand the basics of REST API development. Using flask, I developed a local weather API that fetches data from a third-party API and used Redis for caching to avoid reduntant requests and enhance response time. The API and frontend communicate locally or through the machine's loopback addres. It is not a production-ready service and was just a mini project for me to learn how APIs are structured, how caching improves performance, and how applications can get data from API endpoints. It served as my first step in getting familiar with REST API design and allowing me to practice JSON handling and Python programming. I included instructions how to run it, just in case.
