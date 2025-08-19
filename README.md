@@ -6,6 +6,7 @@ This is a project that I chose to follow in order to apply the basics of python 
 This project consists of two components:
 1. A Flask API which receives and caches data locally (using Redis) and exposes endpoints.
 2. A weather app which is a very simple frontend that consumes the Flask API.
+
 **Note:** The entire project is meant to run locally on a single machine.
    - The Flask API is bound to 127.0.0.1, and should only be accessed by applications on the same device running it.
    - No part of the system is exposed to the internet or local network.
