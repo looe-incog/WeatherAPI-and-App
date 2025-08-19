@@ -13,7 +13,7 @@ def get_weather():
         #Check response: If the response of redis GET is null or weahter_data does not exist, then it would
         #reques data from visual crossing, then store that data with an expiry of 120 seconds.
 
-        url = "" #paste your own API link from visual crossing here
+        url = "" #Enter your API link here from visual crossing
 
         response = requests.get(url)
         if response.status_code == 200:

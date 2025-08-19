@@ -3,6 +3,13 @@
 
 This is a project that I chose to follow in order to apply the basics of python I learned from [Crash Course to Python](https://www.coursera.org/learn/python-crash-course/) by Google. It has extensive use of dictionary data type which I had trouble understanding at first. It is an idea from the  Weather API project by [Roadmap.sh](https://roadmap.sh/projects) wherein we create our own API that fetches from a third-party API, [Visual Crossing](https://www.visualcrossing.com/) in this case, and apply caching using [Redis](https://redis.io/).
 
+This project consists of two components:
+1. A Flask API which receives and caches data locally (using Redis) and exposes endpoints.
+2. A weather app which is a very simple frontend that consumes the Flask API.
+**Note:** The entire project is meant to run locally on a single machine.
+   - The Flask API is bound to 127.0.0.1, and should only be accessed by applications on the same device running it.
+   - No part of the system is exposed to the internet or local network.
+
 ![Weather API Roadmap.sh Idea](https://assets.roadmap.sh/guest/weather-api-f8i1q.png)
 
 # Steps to run the project
